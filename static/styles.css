@@ -1,0 +1,561 @@
+@font-face {
+    font-family: "ArialRound";
+    src: url('./ArialRound.ttf') format('truetype');
+}
+
+* {
+    font-family: "ArialRound";
+    text-align: center;
+}
+
+h1, h2 { 
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: "ArialRound";
+}
+
+#inputButton {
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 6px solid #edefff;
+    width: 450px;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#inputButton2 {
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 4px solid #3f55ff;
+    height: 50px;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#rcorners {
+    border-radius: 15px;
+    background-color: #a2c3ff;
+    border: 5px solid #0023FF;
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    margin-top: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: "ArialRound";
+}
+
+#button {
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 6px solid #edefff;
+    width: 450px;
+    height: 100px;
+    font-family: "ArialRound", Verdana, Tahoma;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+header {
+    background-color: #0009b5;
+    border-bottom: 1px solid #000ac9;
+    display: flex;
+    border-radius: 14px;
+    font-family: "ArialRound";
+    color: #e3e3e3;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 50px;
+    padding-left: 4px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: "ArialRound";
+}
+
+#links_container {
+    display: flex;
+    gap: 16px;
+    font-family: "ArialRound";
+}
+
+#links_container > a {
+    color: #afaeb8;
+    text-decoration:none;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: "ArialRound";
+}
+
+#links_container > a:hover {
+    color: #ffffff;
+    font-family: "ArialRound";
+}
+
+#name_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration:none;
+    color: #e3e3e3;
+    font-family: "ArialRound";
+}
+
+#site_name {
+    margin: 0px;
+    color: #e3e3e3;
+    font-family: "ArialRound";
+}
+
+#entries {
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    right: 13px;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#e {
+    background-color: #ee98ff;
+    border-radius: 5px;
+    border: 2px solid #ff00f2;
+    font-family: "ArialRound";
+}
+
+#math {
+    background-color: rgb(255, 92, 114);
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    font-family: "ArialRound";
+}
+
+#science {
+    background-color: rgb(130, 255, 172);
+    border-radius: 5px;
+    border: 2px solid #02df0d;
+    font-family: "ArialRound";
+}
+
+#socialStudies {
+    background-color: rgb(255, 254, 183);
+    border-radius: 5px;
+    border: 2px solid #eeff00;
+    font-family: "ArialRound";
+}
+
+#band {
+    background-color: rgb(255, 133, 249);
+    border-radius: 5px;
+    border: 2px solid #9900ff;
+    font-family: "ArialRound";
+}
+
+#homeRoom {
+    background-color: rgb(81, 171, 255);
+    border-radius: 5px;
+    border: 2px solid #0011ff;
+    font-family: "ArialRound";
+}
+
+#pe {
+    background-color: #fff2cd;
+    border-radius: 5px;
+    border: 2px solid #aa7400;
+    font-family: "ArialRound";
+}
+
+#foreignLang {
+    background-color: #c738ff;
+    border-radius: 5px;
+    border: 2px solid #7f00b1;
+    font-family: "ArialRound";
+}
+
+#mis {
+    background-color: #ffd885;
+    border-radius: 5px;
+    border: 2px solid #ffae00;
+    font-family: "ArialRound";
+}
+
+#pwd {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-family: "ArialRound";
+}
+
+#inputLabel {
+    margin: auto;
+    max-height: 0px;
+    transition: max-height 0.5s cubic-bezier(0.2, 0.0, 0, 1.0), border 0.5s cubic-bezier(0.2, 0, 0, 1);
+    width: 400px;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 0px solid #edefff;
+    overflow: hidden;
+    display: block;
+    font-family: "ArialRound";
+}
+
+#editLabel {
+	margin: auto;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 6px solid #edefff;
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-family: "ArialRound"
+}
+
+#inputLabel.expanded {
+    margin: auto;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 6px solid #edefff;
+    font-weight: bold;
+    max-height: 1820px;
+    font-family: "ArialRound";
+}
+
+#center {
+    margin: auto;
+    font-family: "ArialRound";
+}
+
+#expandContainer {
+    overflow: hidden;
+    font-family: "ArialRound";
+}
+
+#deleteButton {
+    margin-top: 10px;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #ff9494;
+    border: 3px solid #ff0000;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#rickroll {
+    margin-top: 10px;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #42a1f5;
+    border: 3px solid #3b45f7;
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#sec {
+    margin: auto;
+    width: 450px;
+    border-radius: 10px;
+    background-color: #b9d7ff;
+    border: 6px solid #eff1ff;
+    overflow: hidden; 
+    font-family: "ArialRound";
+}
+
+table {
+    margin: auto;
+    border-color: #4258ff;
+    width: 400px;
+    font-family: "ArialRound";
+}
+
+td, th {
+    font-weight: normal;
+    border: 2px solid #4258ff;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    font-family: "ArialRound";
+}
+
+#font {
+    font-weight: bold;
+    font-family: "ArialRound";
+}
+
+#homeworks {
+    transition: transform 0.5s;
+    font-family: "ArialRound";
+}
+
+#homeworks.expanded {
+    transform: translateY(0%);
+    font-family: "ArialRound";
+}
+
+#textinput {
+    background-color: #afd3ff;
+    font-family: "ArialRound";
+}
+
+.textinput {
+    background-color: #afd3ff;
+    font-family: "ArialRound";
+}
+
+button {
+    margin: 0;
+    border: none;
+    background-color: inherit;
+    font-family: "ArialRound";
+}
+
+img {
+    font-family: "ArialRound";
+}
+
+#thing {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-direction: row;
+    font-family: "ArialRound";
+}
+
+a {
+    color: #6daebd;
+    font-family: "ArialRound";
+}
+a:hover {
+    color: #4f9eb0;
+    font-family: "ArialRound";
+}      
+pre, code {
+    font-family: "ArialRound";
+    padding: 4px;
+    overflow-x: auto;
+    font-family: "ArialRound";
+}
+pre {
+    padding: 8px;
+    font-family: "ArialRound";
+}
+pre code {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    font-family: "ArialRound";
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: "ArialRound";
+}
+button {
+    background-color: #0390fc;
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: transparent;
+    font-size: 15px;
+    text-align: center;
+    font-family: "ArialRound";
+}
+
+#editButton{
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: inherit;
+}
+
+#main_div {
+    border: 7px solid #055af7;
+    border-radius: 15px;
+    text-align: center;
+
+    max-width: 800px;
+    object-fit: contain;
+    color: #d4d3da;
+
+    background-color: #000f91;
+
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ArialRound";
+}
+
+#buttons_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    text-align: center;
+    justify-content: center;
+    font-family: "ArialRound";
+}
+
+html {
+    margin: 0;
+    font-family: "ArialRound";
+}
+
+ul {
+    margin-top: 0px;
+    font-family: "ArialRound";
+    list-style-position: inside;
+}
+#content_wrapper {
+    padding: 16px;
+    flex-grow: 1;
+    font-family: "ArialRound";
+}
+
+#article_div {
+    max-width: 800px;
+    object-fit: contain;
+
+    background-color: #0b00d4;
+    border: 1.5px solid #5e91ff;
+    color: #e3e3e3;
+    border-radius: 8px;
+
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ArialRound";
+}
+#article_div img {
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "ArialRound";
+}
+#article_div p, #article_div li {
+    line-height: 1.6;
+    font-family: "ArialRound";
+}
+#photos {
+    color: #d4ecff;
+    font-weight: bolder;
+}
+#gearList {
+    color: #d4ecff;
+    font-weight: bolder;
+    display: inline-block;
+    border: 3px solid #ffffff;
+    padding: 10px;
+    width: 500px;
+    border-radius: 15px;
+}
+#listLabel {
+    margin: auto;
+    margin-bottom: -3px;
+    color: #d4ecff;
+    border: 3px solid #ffffff;
+    padding: 10px;
+    padding-bottom: 7px;
+    width: 150px;
+    border-bottom: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#bdy {
+    text-align: center;
+    margin: auto;
+}
+
+#photoDiv {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    color: #92e0ff;
+    border: 4px solid #dcf2ff;
+    font-weight: bolder;
+    padding: 10px;
+    width: 900px;
+    border-radius: 15px;
+}
+
+#photoInfoText {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    color: #92e0ff;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+#pic_img {
+    width: 350px;
+}
+
+#home_img {
+    width: 25px;
+    height: 25px;
+}
+
+.before, .after {
+	display: inline-block;
+}
+
+#projects {
+    max-width: 900px;
+    object-fit: contain;
+
+    background-color: #0b00d4;
+    border: 1.5px solid #5e91ff;
+    color: #e3e3e3;
+    border-radius: 8px;
+
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ArialRound";
+    text-align: left;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+#projectsHeader{
+    font-size: 28px;
+}

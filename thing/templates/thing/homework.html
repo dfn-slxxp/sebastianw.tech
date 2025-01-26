@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="shortcut icon" id="home_img" type="image/png" href="{% static 'favicon.ico' %}">
+  </head>
+  <body style="background-color:rgb(104, 200, 255);">
+
+    <header>
+      <nav>
+      <a href="/" id="name_container">
+          <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+          <h1 id="site_name">MisterE</h1>
+      </a>
+      <div id="links_container">
+        <a href="/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/homework/">Homework Tracker</a>
+      </div>
+      </nav>
+    </header>
+
+    <script type="text/javascript">
+      function expandContract() {
+        const el = document.getElementById("inputLabel");
+        const hw = document.getElementById("homeworks");
+        hw.classList.toggle('expanded');
+        el.classList.toggle('expanded');
+      }
+
+      function delRecent() {
+        window.location.href = "https://sebastianshomework.com/del-recent";
+      }
+
+      function edit(num) {
+        window.location.href = "https://sebastianshomework.com/homework/" + num + "/edit/";
+      }
+
+    </script>
+
+    <!-- <button id="deleteButton" onclick="delRecent()">Delete Most Recent<button> -->
+    <h2 id="entries">{{ cnt }}</h2>
+    <h1 id="rcorners">Daily Homework</h1><br><br>
+
+    <div id="center">
+
+      <button id="inputButton" onclick="expandContract()">
+
+        <h3>Click Here To Add New Entry</h3>
+  
+      </button>
+
+    </div>
+
+    <br>
+
+
+    <div id="expandContainer">
+      <form method="POST" id="hw" name="hw" class="hw" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div id="inputLabel">
+
+          <div id="e">
+            <h4>ELA:</h4>
+            <textarea id="textinput" name="e" cols="50" rows="3" maxlength="150" placeholder="ELA">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="math">
+            <h4>Math:</h4>
+            <textarea id="textinput" name="math" cols="50" rows="3" maxlength="150" placeholder="Math">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="science">
+            <h4>Science:</h4>
+            <textarea id="textinput" name="science" cols="50" rows="3" maxlength="150" placeholder="Science">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="socialStudies">
+            <h4>Social Studies:</h4>
+            <textarea id="textinput" name="socialStudies" cols="50" rows="3" maxlength="150" placeholder="Social Studies">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="band">
+            <h4>Band:</h4>
+            <textarea id="textinput" name="band" cols="50" rows="3" maxlength="150" placeholder="Band">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="homeRoom">
+            <h4>Homeroom:</h4>
+            <textarea id="textinput" name="homeRoom" cols="50" rows="3" maxlength="150" placeholder="Homeroom">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="pe">
+            <h4>PE:</h4>
+            <textarea id="textinput" name="pe" cols="50" rows="3" maxlength="150" placeholder="PE">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="foreignLang">
+            <h4>German:</h4>
+            <textarea id="textinput" name="foreignLang" cols="50" rows="3" maxlength="150" placeholder="German">None</textarea>
+          </div>
+
+          <br>
+
+          <div id="mis">
+            <h4>Miscellaneous:</h4>
+            <textarea id="textinput" name="mis" cols="50" rows="3" maxlength="150" placeholder="Misc">None</textarea>
+          </div>
+
+          <br>
+
+	  <div id="pwd">
+		  <h4>Password:</h4>
+		  <input type="password" id="textinput" name="pwd">
+		  <br>
+		  <br>
+	  </div>
+
+	  <br>
+
+          <input id="inputButton2" type="submit" value="Submit" onclick="submit()">
+
+        </div>
+      </form>
+    </div>
+    <br>
+
+    <div id="homeworks">
+      {% for homework in latest_homework_list %}
+
+        <div id="sec">
+          
+
+          <div id="thing">
+            <h4 id="font">Homework For {{ homework.date }}</h4>
+            <button id="editButton" onclick="edit({{ homework.id }})">
+              <img src="{% static 'edit.png' %}" border="0" id="editButton">
+            </button>
+            
+          </div>
+
+
+          <table>
+
+            <tr id="e">
+              <td>ELA</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.ELA }}</td>
+            </tr>
+
+            <tr id="math">
+              <td>Math</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.Math }}</td>
+            </tr>
+
+            <tr id="science">
+              <td>Science</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.Science }}</td>
+            </tr>
+
+            <tr id="socialStudies">
+              <td>Social Studies</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.SocialStudies }}</td>
+            </tr>
+
+            <tr id="band">
+              <td>Band</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.Band }}</td>
+            </tr>
+
+            <tr id="homeRoom">
+              <td>Homeroom</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.HomeRoom }}</td>
+            </tr>
+
+            <tr id="pe">
+              <td>PE</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.PE }}</td>
+            </tr>
+
+            <tr id="foreignLang">
+              <td>German</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.ForeignLang }}</td>
+            </tr>
+
+            <tr id="mis">
+              <td>Miscellaneous</td>
+              <td style="white-space:pre-wrap; word-wrap:break-word">{{ homework.Misc }}</td>
+            </tr>
+
+          </table>
+          <br>
+
+        </div>
+        <br>
+
+      {% endfor %}
+    </div>
+
+  </body>
+</html>

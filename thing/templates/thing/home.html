@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'PFP No BG.png' %}">
+    </head>
+
+    <body style="background-color:#4769ff; font-weight: bold;">
+
+        <header>
+            <nav>
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                <h1 id="site_name">MisterE</h1>
+            </a>
+            <div id="links_container">
+                <a href="/">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="/homework/">Homework Tracker</a>
+            </div>
+            </nav>
+        </header>
+
+        <div id="content_wrapper">
+            <div id="article_div">
+              
+                <h2>Hello!</h2>
+                <p>I'm Sebastian. I'm currently a Freshman at Stuyvesant High School, have an interest in coding, specifically website development and software engineering, and photography and photo editing.</p>
+            
+                <p>To see my projects, take a look at <a href="/projects/">my Projects</a>.</p>
+            
+                <h2>Contact</h2>
+                <ul>
+                <li>Email - <a href="mailto:sebastian@sebastianw.tech"><code>sebastian@sebastianw.tech</code></a></li>
+                <li>Github - <a href="https://github.com/dfn-slxxp"><code>dfn-slxxp</code></a></li>
+                <li>Discord - <a href="https://discord.gg/m92geCtJ54"><code>bored.24.7</code></a></li>
+                </ul>
+      
+              
+            </div>
+        </div>
+
+    </body>
+
+</html>

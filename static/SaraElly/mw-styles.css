@@ -1,0 +1,227 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Varela Round";
+    font-stretch: 110%;
+}
+
+/* Defaults */
+body {
+    color: #0f4577;
+    line-height: 1.5;
+    background-color: #d7e4fd;
+    margin: 0;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Classes */
+.heading {
+    background-color: #d7e4fd;
+    border-radius: 14px;
+    color: #051d49;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+    line-height: 2;
+    padding: 5px 0;
+}
+.title-bar {
+    background-color: #8389ff;
+    border-bottom: 2.5px solid #00033b;
+    display: flex;
+    border-radius: 14px;
+    font-weight: bold;
+}
+.title {
+    font-size: 37pt;
+    margin: 0;
+}
+.subtitle {
+    font-size: 25pt;
+    margin: 0;
+}
+.fsubtitle {
+    font-size: 30pt;
+}
+.cover-img {
+/*    width: 800px;                 Formats better with height */
+    height: 275px;
+    border: 1px solid black;
+}
+.mottos {
+    font-size: smaller;
+}
+.toc-title {
+    font-size: 25pt;
+}
+.toc {
+    color: #00153d;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+    font-size: large;
+}
+.copres-column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.align-last-row{
+    float: left;
+    width: 16.65%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.manager-column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.two {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.event-center {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.abt-card {
+    margin: 8px;
+}
+.event-card {
+    margin: 8px;
+}
+.container {
+    padding: 0 16px;
+}
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.position {
+    color:#4a52e2;
+}
+.row {
+    margin: auto;
+}
+.mission-top {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fresh {
+    text-align: center;
+}
+.contacts {
+    text-align: center;
+}
+.fresh-list {
+    display: inline-block;
+    text-align: left;
+}
+.pres-contacts {
+    display: inline-block;
+    text-align: left;
+}
+.managers-contacts {
+    display: inline-block;
+    text-align: left;
+}
+.fresh-item {
+    text-align: center;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.why-page {
+    text-align: center;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.fresh-subtitle {
+    font-size: 19pt;
+    font-weight: bolder;
+    color: #0f4577;
+}
+.fhow {
+    font-size: 13pt;
+    font-weight: bold;
+}
+.txt {
+    text-align: center;
+}
+.transparency-sec {
+    text-align: center;
+    max-width: 65%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+/* IDs */
+#name_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration:none;
+    color: #051d49;
+}
+#site_name {
+    margin: 0px;
+    color: #051d49;
+}
+#links_container > a {
+    color: #031f55;
+    text-decoration:none;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#links_container > a {
+    color: #031f55;
+    text-decoration:none;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#links_container > a:hover {
+    color: #085f99;
+}
+#site_logo {
+    width: 55px;
+    height: 55px;
+}

@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    {% load static %}
+    <html lang="en">
+        <head>
+            <title>Sebastian's Photos</title>
+            <link rel="stylesheet" href="{% static 'styles.css' %}">
+            <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'PFP No BG.png' %}">
+            <style>
+                .quarter {
+                    float: left;
+                    width: 25%;
+                    height: 220px;
+                    margin-bottom: 16px;
+                    padding: 0 8px;
+                    text-align: center;
+                    filter: blur(10%);
+                    filter: brightness(50%);
+                }
+
+                .quarter:hover {
+                    filter: brightness(70%);
+                }
+
+                #NYIAS {
+                    background-image: "{% get_static_prefix %}CarPhotos/IMG_9945_Edited.jpg";
+                }
+
+                #wild {
+                    background-image: "{% get_static_prefix %}CarPhotos/DSC02806_Edited.jpg";
+                }
+            </style>
+        </head>
+
+        <body style="background-color:#000dff; font-weight: bold;">
+
+            <header>
+                <nav>
+                <a href="/" id="name_container">
+                    <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                    <h1 id="site_name">MisterE</h1>
+                </a>
+                <div id="links_container">
+                    <a href="/">About</a>
+                    <a href="/projects/">Projects</a>
+                    <a href="/homework/">Homework Tracker</a>
+                </div>
+                </nav>
+            </header>
+            <div id="bdy">
+
+                <h1 id="photos">Photography</h1>
+
+                <p id="photos">Recently, I've gotten back into photography. Every once in a while, I'll upload my best photos here!</p>
+
+                <div id="gear">
+                    <div id="lldiv">
+                        <h2 id="listLabel">List of Gear</h3>
+                    </div>
+                    <div id="lst">
+                        <ul id="gearList">
+                            <li>Camera: Canon EOS 60D or some photos from my iPhone 14 Pro</li>
+                            <li>Tripod: Random Tripod I Got</li>
+                            <li>Laptop: 2023 M3 Macbook Pro</li>    
+                        </ul>
+                    </div>
+                </div>
+            <br>
+
+            <a href="/photography/nyias" class="quarter" id="NYIAS">
+                <button>
+                    <p>4/7/2024</p>
+                    <p>New York International Auto Show</p>
+                </button>
+            </a>
+
+            <a href="/photography/wild" class="quarter" id="wild">
+                <button>
+                    <p>Various</p>
+                    <p>Photos From the Wild</p>
+                </button>
+            </a>
+
+            <div id="evnts">
+                <h2 style="color: white;">List of Places/Events I've Photographed</h2>
+                <ul id="lst">
+                    <li style="color: white;">4/7/2024 - <a href="/photography/nyias">New York International Auto Show</a></li>
+                </ul>
+            </div>
+
+        <p xmlns:cc="http://creativecommons.org/ns#" ><a rel="cc:attributionURL" href="https://sebastianshomework.com/photography/">This work</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://sebastianshomework.com/">Sebastian Waldman</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+        </body>	
+
+    </html>

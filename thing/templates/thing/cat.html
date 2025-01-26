@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Cats</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'PFP No BG.png' %}">
+    </head>
+
+    <body style="background-color:#4769ff; font-weight: bold;">
+
+        <header>
+            <nav>
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                <h1 id="site_name">Sebastian W</h1>
+            </a>
+            <div id="links_container">
+                <a href="/">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="/homework/">Homework Tracker</a>
+            </div>
+            </nav>
+        </header>
+
+        <div id="content_wrapper">
+            <div id="article_div">
+              
+                <h2>Cats</h2>
+                <div>
+                    <img src="{% static 'SimbaPic.jpeg' %}" width="350px">
+                    
+                    <p style="font-size: 20px;">Cats. Some of the most adorable fluffballs of the feline family. These feline fluffballs like spending time with their owners, who should be happy from adorableness. If anyone thinks cats are not cute(Arya Rajda), they should be assassinated with an intercontinental ballistic missile.</p>
+                
+                </div>
+      
+                <video width="500" controls>
+                    <source src="{% static 'SimbaVid.mp4' %}" type="video/mp4">
+                </video>
+              
+            </div>
+        </div>
+
+    </body>
+
+</html>

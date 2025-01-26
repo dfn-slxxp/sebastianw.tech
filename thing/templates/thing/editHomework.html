@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <head>
+        <title>Edit Homework</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+
+    </head>
+
+    <body style="background-color:#4769ff;">
+    
+        <script type="text/javascript">
+
+            function home() {
+                window.location.href = "https://sebastianw.tech/";
+            }
+
+        </script>
+
+        
+
+        <header>
+            <nav>
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                <h1 id="site_name">Sebastian W</h1>
+            </a>
+            <div id="links_container">
+                <a href="/">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="/homework/">Homework Tracker</a>
+            </div>
+            </nav>
+        </header>
+
+        <h1 id="rcorners">Daily Homework</h1>
+        
+        <br><br>
+
+        <form method="POST" id="hw" name="hw" class="hw" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="editLabel">
+    
+              <div id="e">
+                <h4>ELA:</h4>
+                <textarea class="textinput" name="e" cols="50" rows="3" maxlength="150" placeholder="ELA">{{ ela }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="math">
+                <h4>Math:</h4>
+                <textarea class="textinput" name="math" cols="50" rows="3" maxlength="150" placeholder="Math">{{ math }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="science">
+                <h4>Science:</h4>
+                <textarea class="textinput" name="science" cols="50" rows="3" maxlength="150" placeholder="Science">{{ science }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="socialStudies">
+                <h4>Social Studies:</h4>
+                <textarea class="textinput" name="socialStudies" cols="50" rows="3" maxlength="150" placeholder="Social Studies">{{ socialStudies }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="band">
+                <h4>Band:</h4>
+                <textarea class="textinput" name="band" cols="50" rows="3" maxlength="150" placeholder="Band">{{ band }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="homeRoom">
+                <h4>Homeroom:</h4>
+                <textarea class="textinput" name="homeRoom" cols="50" rows="3" maxlength="150" placeholder="Homeroom">{{ homeRoom }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="pe">
+                <h4>PE:</h4>
+                <textarea class="textinput" name="pe" cols="50" rows="3" maxlength="150" placeholder="PE">{{ pe }}</textarea>
+              </div>
+    
+              <br>
+
+              <div id="foreignLang">
+                <h4>German:</h4>
+                <textarea class="textinput" name="foreignLang" cols="50" rows="3" maxlength="150" placeholder="German">{{ foreignLang }}</textarea>
+              </div>
+    
+              <br>
+    
+              <div id="mis">
+                <h4>Miscellaneous:</h4>
+                <textarea class="textinput" name="mis" cols="50" rows="3" maxlength="150" placeholder="Misc">{{ misc }}</textarea>
+              </div>
+    
+              <br>
+		
+	      <div id="pwd">
+		      <h4>Password:</h4>
+		      <input type="password" name="pwd" id="textinput">
+		      <br>
+		      <br>
+	      </div>
+
+	      <br>
+    
+              <input id="inputButton2" type="submit" value="Save" onclick="submit()">
+    
+            </div>
+          </form>
+          <br>
+          <br>
+          <br>
+
+    </body>
+
+</html>

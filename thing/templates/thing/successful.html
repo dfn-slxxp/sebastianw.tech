@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <head>
+        <title>Edit Successful</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+
+    </head>
+
+    <body style="background-color:rgb(104, 200, 255);">
+    
+        <script type="text/javascript">
+
+            function home() {
+                window.location.href = "https://sebastianw.tech/homework";
+            }
+
+        </script>
+
+        <header>
+            <nav>
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                <h1 id="site_name">Sebastian's Site</h1>
+            </a>
+            <div id="links_container">
+                <a href="/">About</a>
+                <a href="/homework/">Homework Tracker</a>
+                <a href="/ggbypass/">GoGuardian Bypass</a>
+                <a href="/photography/">Photos</a>
+                <!-- <a href="/blog/">Blog</a> -->
+            </div>
+            </nav>
+        </header>
+
+        <h1 id="rcorners">Daily Homework</h1><br><br>
+        <div style="text-align: center;">
+            <button id="button" onclick="home()" style="text-align: center; margin: auto;">Click Here To Return To Home</button>
+        </div>
+
+    </body>
+
+</html>

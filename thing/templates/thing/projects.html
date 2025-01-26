@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>My Projects</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link id="home_img" rel="shortcut icon" type="image/png" href="{% static 'PFP No BG.png' %}">
+    </head>
+
+    <body style="background-color:#4769ff; font-weight: bold;">
+
+        <header>
+            <nav>
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'PFP No BG.png' %}" width="48px" height="48px" alt="website logo">
+                <h1 id="site_name">Sebastian W</h1>
+            </a>
+            <div id="links_container">
+                <a href="/">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="/homework/">Homework Tracker</a>
+            </div>
+            </nav>
+        </header>
+
+        <div id="content_wrapper" class="align-left">
+            <div id="projects" class="align-left">
+              
+                <h1 class="align-left" id="projectsHeader">My Coding Projects:</h1>
+                <ul class="align-left">
+                    <li class="align-left"><a href="/homework/">Homework Tracker</a> - To keep track of my Homework, letting me do other useless stuff</li>
+<!--                    <li class="align-left"><a href="/ggbypass/">GoGuardian Bypass</a> - Bypass GoGuardian (Don't let the schools know about this)</li>      -->
+                </ul>
+
+                <br>
+
+                <h1 class="align-left" id="projectsHeader">Other Projects</h2>
+                <ul class="align-left">
+                    <li class="align-left"><a href="/photography/">Photography</a> - I like taking and editing photos, so I'll include some of my edited photos here</li>
+                </ul>
+
+                <br>
+
+                <h1 class="align-left" id="projectsHeader">Contributions</h1>
+                <ul class="align-left">
+                    <li class="align-left"><a href="https://github.com/StuyPulse">StuyPulse</a> - I am an active member in Stuyvesant's Robotics Team in the Software Department</li>
+                </ul>
+      
+              
+            </div>
+        </div>
+
+    </body>
+
+</html>

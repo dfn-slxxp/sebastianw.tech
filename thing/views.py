@@ -63,7 +63,7 @@ def homework(request):
         foreignLang = request.POST.get('foreignLang')
         misc = request.POST.get('mis')
         pwd = request.POST.get('pwd')
-        if(pwd == 'NoobAtAllGames123!'): 
+        if(pwd == ''): 
             Homework.objects.create(date=datetime.date.today(), ELA=ela, Math=math, Science=science, SocialStudies=socialStudies, Band=band, HomeRoom=homeRoom, PE=pe, ForeignLang=foreignLang, Misc=misc)
             return redirect(successful)
         else:
@@ -110,7 +110,7 @@ def edit(request, num):
         hw.PE = pe
         hw.ForeignLang = foreignLang
         hw.Misc = misc
-        if(pwd == 'NoobAtAllGames123!'):
+        if(pwd == ''):
             hw.save()
             return redirect(successful)
         else:
